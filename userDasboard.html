@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <h2>User Dashboard</h2>
+
+    <input type="text" id="searchHotel" placeholder="Search for a Hotel">
+    <button id="searchButton">Search</button>
+    <h3>Available Hotels</h3>
+    <table>
+        <tr>
+            <th>Hotel Name</th>
+            <th>Location</th>
+            <th>Price per night</th>
+            <th>Book</th>
+        </tr>
+        <tr>
+            <td>Luxury Hotel</td>
+            <td>New York</td>
+            <td>$150</td>
+            <td><button id="bookNow" data-hotel-id="123">Book Now</button></td>
+        </tr>
+    </table>
+    <h3>Booking Form</h3>
+    <form >
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="phone" placeholder="Your Phone" required>
+        <input type="date" id="date"  required>
+        <input type="number" id="days" placeholder="Number of days" required>
+        <button id="confirmBooking">Confirm Booking</button>
+
+    </form>
+
+    <div id="bookingMessage" style="display:none;">Booking Successfull</div>
+</body>
+</html>
